@@ -2,6 +2,7 @@ package com.csc340.crud_api;
 
 import java.util.List;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+@Controller
 public class CharacterMvcController {
     private final CharacterService characterService;
 
@@ -95,7 +97,8 @@ public class CharacterMvcController {
         return "character-edit";
     }
 
-    @GetMapping("/character/update/{id}")
+
+    @PostMapping("/character/update/{id}")
     public String updateCharacter(@PathVariable Long id, @ModelAttribute Character updatedCharacter) {
        characterService.updateCharacter(id, updatedCharacter);
        return "redirect:/characters"; 
