@@ -49,9 +49,17 @@ public class CharacterMvcController {
         return "about";
     }
 
+    // @GetMapping("/characters")
+    // public String getAllCharacters(Model model) {
+    //     model.addAttribute("characters", characterService.getAllCharacters());
+    //     return "character-list";
+    // }
+
     @GetMapping("/characters")
     public String getAllCharacters(Model model) {
-        model.addAttribute("characters", characterService.getAllCharacters());
+        List<Character> characters = characterService.getAllCharacters();
+        characters.sort((c1, c2) -> Long.compare(c1.getCharacterId(), c2.getCharacterId()));
+        model.addAttribute("characters", characters);
         return "character-list";
     }
 
