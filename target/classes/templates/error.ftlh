@@ -25,7 +25,7 @@
                   Characters
                 </a>
                 <ul class="dropdown-menu">
-                    <#list allCharacters as character>
+                    <#list (allCharacters![]) as character>
                         <li><a class="dropdown-item" href="/character/${character.characterId}">${character.name}</a></li>
                         <#if character_has_next>
                             <li><hr class="dropdown-divider"></li>
@@ -46,8 +46,8 @@
     
     <div class="container text-center mt-5">
         <div class="alert alert-danger">
-            <h3>Invalid Character ID</h3>
-            <p class="text-muted">Please check the ID and try again.</p>
+            <h3>Invalid Page</h3>
+            <p class="text-muted">It looks like something didn’t match. Could you check your details and try again?</p>
             <!-- <div class="d-flex justify-content-end">
                 <a href="/characters" class="btn btn-primary">Back</a>
             </div>  -->
