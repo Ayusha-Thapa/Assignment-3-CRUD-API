@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand me-1" href="/characters">
+            <img src="/Images/HarryPotter_NavBarLogo.png" alt="Harry Potter Navigation Bar Logo" height="65" width="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/characters">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Characters
+                </a>
+                <ul class="dropdown-menu">
+                    <#list allCharacters as character>
+                        <li><a class="dropdown-item" href="/character/${character.characterId}">${character.name}</a></li>
+                        <#if character_has_next>
+                            <li><hr class="dropdown-divider"></li>
+                        </#if>
+                    </#list>
+                </ul>
+              </li>
+              <li class="nav-item"></li>
+              <a class="nav-link" aria-current="page" href="/character/create">Add Character</a>
+            </li>
+              <li class="nav-item"></li>
+              <a class="nav-link" aria-current="page" href="/about">About Us</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col mb-4">
+            <img src="Images/HeroImage_DetailPage.jpg" alt="Harry Potter Navigation Bar Logo">
+          </a>
+          </div>
+
+          <div class="col">
+
+            <h2 class="mb-3">About Us</h2>
+          
+
+            <p class="mx-auto" style="max-width: 900px;">
+                This website is a character gallery inspired by the Harry Potter series, which I chose because it is
+                a well-known fictional universe with a wide range of memorable characters and clearly defined traits.
+                The series features characters with distinct personalities, values, and roles, making it a strong
+                fit for a character-based website.
+              </p>
+            
+              <p class="mx-auto" style="max-width: 900px;">
+                The Harry Potter world allows characters to be meaningfully categorized in multiple ways, including
+                Hogwarts houses based on personality and values (such as Gryffindor, Hufflepuff, Ravenclaw, and
+                Slytherin), blood status, and moral or organizational allegiance. These built-in categories made it
+                easier to design a structured and searchable character gallery.
+              </p>
+            
+              <p class="mx-auto" style="max-width: 900px;">
+                When designing the website, I focused on keeping the layout simple and visually organized using
+                Bootstrap components like the navigation bar, grid system, and cards. Overall, this project allowed
+                me to combine a popular fictional universe with basic web development concepts to create an
+                interactive and easy-to-use character gallery.
+              </p>
+          
+          </div>
+        </div>
+        </div>
+ 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>

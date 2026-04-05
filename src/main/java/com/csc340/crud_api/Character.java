@@ -30,19 +30,27 @@ public class Character {
     private String allegiance;
     private String imageUrl;
 
+    @Column(columnDefinition = "TEXT")
+    private String backStory;
+    private String abilities;
+    private String personalityTraits;
+
     public Character() {
     }
 
-    public Character(String name, String description, String house, String bloodStatus, String allegiance, String imageUrl) {
+    public Character(String name, String description, String house, String bloodStatus, String allegiance, String imageUrl, String backStory, String abilities, String personalityTraits) {
         this.name = name;
         this.description = description;
         this.house = house;
         this.bloodStatus = bloodStatus;
         this.allegiance = allegiance;
         this.imageUrl = imageUrl;
+        this.backStory = backStory;
+        this.abilities = abilities;
+        this.personalityTraits = personalityTraits;
     }
 
-    public Character(Long characterId, String name, String description, String house, String bloodStatus, String allegiance, String imageUrl) {
+    public Character(Long characterId, String name, String description, String house, String bloodStatus, String allegiance, String imageUrl, String backStory, String abilities, String personalityTraits) {
         this.characterId = characterId;
         this.name = name;
         this.description = description;
@@ -50,6 +58,9 @@ public class Character {
         this.bloodStatus = bloodStatus;
         this.allegiance = allegiance;
         this.imageUrl = imageUrl;
+        this.backStory = backStory;
+        this.abilities = abilities;
+        this.personalityTraits = personalityTraits;
     }
 
     public Long getCharacterId() {
@@ -106,5 +117,29 @@ public class Character {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getBackStory() {
+        return backStory;
+    }
+
+    public void setBackStory(String backStory) {
+        this.backStory = backStory;
+    }
+
+    public String getAbilities() {
+        return abilities;
+    }
+
+    public void setAbilities(String abilities) {
+        this.abilities = abilities;
+    }
+
+    public String getPersonalityTraits() {
+        return personalityTraits;
+    }
+
+    public void setPersonalityTraits(String personalityTraits) {
+        this.personalityTraits = personalityTraits;
     }
 }
