@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      .character-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+    
+      .hero-card .card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+    
+      .hero-card:hover .card {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -89,19 +105,19 @@
       <div class="container my-5 p-3">
         
         <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-            <#list characters as character>
-                <div class="col hero-card" data-name="${character.name}" data-tags="gryffindor half-blood">       
-                    <div class="card h-100">
-                        <img src="${character.imageUrl!'images/default.jpg'}" class="card-img-top" alt="${character.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${character.name}</h5>
-                            <p class="card-text">
-                                ${character.description}
-                            </p>
-                        </div>
-                    </div>
+          <#list characters as character>
+            <div class="col hero-card" data-name="${character.name}" data-tags="gryffindor half-blood">
+              <a href="/character/${character.characterId}" class="character-link">
+                <div class="card h-100">
+                  <img src="${character.imageUrl!'/images/default.jpg'}" class="card-img-top" alt="${character.name}">
+                  <div class="card-body">
+                    <h5 class="card-title">${character.name}</h5>
+                    <p class="card-text">${character.description}</p>
+                  </div>
                 </div>
-            </#list>
+              </a>
+            </div>
+          </#list>
         </div>
       
         <!-- <div class="row justify-content-center g-4"></div> -->
