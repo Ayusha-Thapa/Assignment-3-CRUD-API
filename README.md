@@ -405,7 +405,7 @@ https://uncg-my.sharepoint.com/:v:/r/personal/a_thapa_uncg_edu/Documents/CSC340-
 Video link:
 
 ```
-[https://uncg-my.sharepoint.com/:v:/g/personal/a_thapa_uncg_edu/IQCQ9zKlDkmEQaFi3Z8NF6oPAZK8JaMjTfFLhkxXQC4LwKg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=asyZxH](https://uncg-my.sharepoint.com/:v:/g/personal/a_thapa_uncg_edu/IQCQ9zKlDkmEQaFi3Z8NF6oPAZK8JaMjTfFLhkxXQC4LwKg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ySde2n)
+https://uncg-my.sharepoint.com/:v:/g/personal/a_thapa_uncg_edu/IQCQ9zKlDkmEQaFi3Z8NF6oPAZK8JaMjTfFLhkxXQC4LwKg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ewJEu1
 ```
 
 Ensure sharing permission is set to **UNCG users**.
